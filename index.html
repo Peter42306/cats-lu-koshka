@@ -47,22 +47,51 @@ body, html {
 /* Fixed background photo for half screen */
 .split-contact-section{
     display: flex;
-    min-height: 100vh;
+    min-height: 70vh;
 }
-
 .split-left-bg{
-    width: 50%;
-    background-image: url('/images/20250928_163121.jpg');
+    width: 60%;
+    background-image: url('/images/20260411_100037_1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
 .split-right-content{
-    width: 50%;
+    width: 40%;
     background: #f1f1f1;
     padding: 80px 48px;
+}
+/* Mobile */
+@media (max-width: 768px){
+    .split-contact-section{
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .split-left-bg{
+        width: 100%;
+        height: 300px;
+        background-attachment: scroll;
+    }
+
+    .split-right-content{
+        width: 100%;
+        padding: 48px 24px;
+    }
+}
+
+.cat-img-main,
+.cat-img-hover{
+    transition: opacity 0.5s ease;
+}
+
+a:hover .cat-img-main{
+    opacity: 0.3;
+}
+
+a:hover .cat-img-hover{
+    opacity: 1;
 }
 
 </style>
@@ -75,11 +104,13 @@ body, html {
     <a href="#home" class="w3-bar-item w3-button w3-wide">ВОЗЬМИ ДРУГА</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="index.html#about" class="w3-bar-item w3-button">ПРО НАС</a>
-      <a href="index.html#team" class="w3-bar-item w3-button">TEAM</a>
-      <a href="index.html#work" class="w3-bar-item w3-button">WORK</a>
-      <a href="index.html#pricing" class="w3-bar-item w3-button">PRICING</a>
-      <a href="index.html#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="index.html#about" class="w3-bar-item w3-button">ПРО САЙТ</a>
+      <a href="index.html#all-cats" class="w3-bar-item w3-button">НАШИ ПИТОМЦЫ</a>
+      <a href="index.html#team" class="w3-bar-item w3-button">КТО МЫ</a>
+      <a href="index.html#gallery" class="w3-bar-item w3-button">НАШИ БУДНИ</a>
+      <a href="index.html#blog" class="w3-bar-item w3-button">ЗАМЕТКИ</a>
+      <a href="index.html#how-take" class="w3-bar-item w3-button">СОВЕТЫ</a>
+      <a href="index.html#contact" class="w3-bar-item w3-button">КОНТАКТЫ</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -91,34 +122,37 @@ body, html {
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-green w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="index.html#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="index.html#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-  <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Закрыть ×</a>
+  <a href="index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ПРО САЙТ</a>
+  <a href="index.html#all-cats" onclick="w3_close()" class="w3-bar-item w3-button">НАШИ ПИТОМЦЫ</a>
+  <a href="index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">КТО МЫ</a>
+  <a href="index.html#gallery" onclick="w3_close()" class="w3-bar-item w3-button">НАШИ БУДНИ</a>
+  <a href="index.html#blog" onclick="w3_close()" class="w3-bar-item w3-button">ЗАМЕТКИ</a>
+  <a href="index.html#how-take" onclick="w3_close()" class="w3-bar-item w3-button">СОВЕТЫ</a>
+  <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">КОНТАКТЫ</a>  
 </nav>
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small w3-hide-medium">Помогаем бездомным кошкам и котам найти свой дом и семью</span><br>
-    <span class="w3-xxlarge w3-hide-large">Помогаем бездомным кошкам и котам найти свой дом и семью</span><br>
-    <span class="w3-large">Каждое животное заслуживает любовь, заботу </span>
-    <p><a href="index.html#all-cats" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Возьми себе друга у нас</a></p>
+    <span class="w3-jumbo w3-hide-small w3-hide-medium w3-animate-right">Помогаем бездомным кошкам и котам найти свой дом и семью</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-animate-right">Помогаем бездомным кошкам и котам найти свой дом и семью</span><br>
+    <span class="w3-large w3-animate-left">Каждое животное заслуживает любовь, заботу </span><br>
+    <span class="w3-large w3-animate-right">Спасение одного кота не изменит мир. Но мир несомненно изменится для этого одного кота...</span>
+    <p><a href="index.html#all-cats" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off w3-animate-bottom">Возьми себе друга у нас</a></p>
   </div> 
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+  <!-- <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-snapchat w3-hover-opacity"></i>
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
+  </div> -->
 </header>
 
 <!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
+<div class="w3-container" style="padding:64px 16px" id="about">
   <h3 class="w3-center">ПРО САЙТ</h3>
   <div style="max-width: 900px; margin: 0 auto;">
     <p class="w3-center w3-large">Этот сайт - это ресурс для помощи бездомным животным в Одессе. Мы помогаем бездомным кошкам и котам найти любящую семью. Животные временно живут дома, получают заботу и уход, пока не встретят своих хозяев.</p>
@@ -154,151 +188,133 @@ body, html {
 
 
 <!-- Promo Section - "We know design" -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="all-cats">
-    <h3 class="w3-center">НАШИ ПИТОМЦЫ</h3>
-  <p class="w3-center w3-large">Этот сайт - это ресурс для помощи бездомным животным. И нужно продумать текст и название этой части. Подходит ли НАШИ ПИТОМЦЫ.</p>
-    <!-- First Photo Grid-->
-  <div class="w3-row-padding">
+<div class="w3-container w3-light-grey" style="padding:64px 16px" id="all-cats">
+  <h3 class="w3-center">НАШИ ПИТОМЦЫ</h3>
+  <div style="max-width: 1300px; margin: 0 auto;">
+    <p class="w3-center w3-large">Здесь вы можете познакомиться с нашими питомцами, которые ищут любящий дом и заботливую семью. Каждый из них имеет свою историю и очень ждёт человека, который подарит ему тепло, безопасность и любовь.</p>
     
-    <div class="w3-col l4 m6 s12 w3-container w3-margin-bottom">
+    <!-- Карточка котов -->
+    <div class="w3-row-padding">
+      <!-- Карточка кота -->
+      <div class="w3-col l3 m6 s12 w3-container w3-margin-bottom">
         <a href="cat-page.html">
-            <img src="/images/20250928_163121.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+          <div>
+            <img src="/images/20260211_120002_1.jpg" alt="Мурчик" style="width:100%" class="w3-hover-opacity">            
+          </div>            
         </a>      
-      <div class="w3-container w3-white">
-        <h3>Мурзик</h3>
-        <p>
-            Пол: мальчик<br/>
-            Возраст: 3 года<br/>
-            Стерилизация: да<br/>
-            Вакцинация: да
-        </p>        
-        
-        <div style="display:flex; gap:12px; margin-bottom: 15px;">
-            <a href="cat-page.html" class="w3-button w3-light-grey" style="flex: 1;">
-                Детали
-            </a>
-            <button onclick="copyCatLink('cat-page.html')" class="w3-button w3-light-grey" style="flex: 1;">
-                Поделиться
-            </button>                
-        </div>                 
+        <div class="w3-container w3-white">
+          <h3>Мурчик</h3>
+          <p>
+              Пол: мальчик<br/>
+              Возраст: 3 года<br/>
+              Стерилизация: да<br/>
+              Вакцинация: да
+          </p>                  
+          <div style="display:flex; gap:12px; margin-bottom: 15px;">
+              <a href="cat-page.html" class="w3-button w3-light-grey" style="flex: 1;">
+                  Детали
+              </a>
+              <button onclick="copyCatLink('cat-page.html')" class="w3-button w3-light-grey" style="flex: 1;">
+                  Поделиться
+              </button>                
+          </div>                 
+        </div>
       </div>
-    </div>
-
-    <div class="w3-col l4 m6 s12 w3-container w3-margin-bottom">
-      <img src="/images/20250928_163121.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <h3>Мурзик</h3>
-        <p>
-            Пол: мальчик<br/>
-            Возраст: 3 года<br/>
-            Стерилизация: да<br/>
-            Вакцинация: да
-        </p>        
-        
-        <div style="display:flex; gap:12px; margin-bottom: 15px;">
-            <a href="cat-page.html" class="w3-button w3-light-grey" style="flex: 1;">
-                Детали
-            </a>
-            <button onclick="copyCatLink('cat-page.html')" class="w3-button w3-light-grey" style="flex: 1;">
-                Поделиться
-            </button>                
-        </div>                 
+      <!-- Карточка кота -->
+      <div class="w3-col l3 m6 s12 w3-container w3-margin-bottom">
+        <a href="cat-page.html">
+          <div>
+            <img src="/images/20260211_120002_1.jpg" alt="Мурчик" style="width:100%" class="w3-hover-opacity">            
+          </div>
+            
+        </a>      
+        <div class="w3-container w3-white">
+          <h3>Мурзик</h3>
+          <p>
+              Пол: мальчик<br/>
+              Возраст: 3 года<br/>
+              Стерилизация: да<br/>
+              Вакцинация: да
+          </p>                  
+          <div style="display:flex; gap:12px; margin-bottom: 15px;">
+              <a href="cat-page.html" class="w3-button w3-light-grey" style="flex: 1;">
+                  Детали
+              </a>
+              <button onclick="copyCatLink('cat-page.html')" class="w3-button w3-light-grey" style="flex: 1;">
+                  Поделиться
+              </button>                
+          </div>                 
+        </div>
       </div>
-    </div>
-
-    <div class="w3-col l4 m6 s12 w3-container w3-margin-bottom">
-      <img src="/images/20250928_163121.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <h3>Мурзик</h3>
-        <p>
-            Пол: мальчик<br/>
-            Возраст: 3 года<br/>
-            Стерилизация: да<br/>
-            Вакцинация: да
-        </p>        
-        
-        <div style="display:flex; gap:12px; margin-bottom: 15px;">
-            <a href="cat-page.html" class="w3-button w3-light-grey" style="flex: 1;">
-                Детали
-            </a>
-            <button onclick="copyCatLink('cat-page.html')" class="w3-button w3-light-grey" style="flex: 1;">
-                Поделиться
-            </button>                
-        </div>                 
+      <!-- Карточка кота -->
+      <div class="w3-col l3 m6 s12 w3-container w3-margin-bottom">
+        <a href="cat-page.html">
+          <div>
+            <img src="/images/20260211_120002_1.jpg" alt="Мурчик" style="width:100%" class="w3-hover-opacity">            
+          </div>
+            
+        </a>      
+        <div class="w3-container w3-white">
+          <h3>Мурзик</h3>
+          <p>
+              Пол: мальчик<br/>
+              Возраст: 3 года<br/>
+              Стерилизация: да<br/>
+              Вакцинация: да
+          </p>                  
+          <div style="display:flex; gap:12px; margin-bottom: 15px;">
+              <a href="cat-page.html" class="w3-button w3-light-grey" style="flex: 1;">
+                  Детали
+              </a>
+              <button onclick="copyCatLink('cat-page.html')" class="w3-button w3-light-grey" style="flex: 1;">
+                  Поделиться
+              </button>                
+          </div>                 
+        </div>
       </div>
-    </div>
+      <!-- Карточка кота -->
+      <div class="w3-col l3 m6 s12 w3-container w3-margin-bottom">
+        <a href="cat-page.html">
+          <div>
+            <img src="/images/20260211_120002_1.jpg" alt="Мурчик" style="width:100%" class="w3-hover-opacity">            
+          </div>
+            
+        </a>      
+        <div class="w3-container w3-white">
+          <h3>Мурзик</h3>
+          <p>
+              Пол: мальчик<br/>
+              Возраст: 3 года<br/>
+              Стерилизация: да<br/>
+              Вакцинация: да
+          </p>                  
+          <div style="display:flex; gap:12px; margin-bottom: 15px;">
+              <a href="cat-page.html" class="w3-button w3-light-grey" style="flex: 1;">
+                  Детали
+              </a>
+              <button onclick="copyCatLink('cat-page.html')" class="w3-button w3-light-grey" style="flex: 1;">
+                  Поделиться
+              </button>                
+          </div>                 
+        </div>
+      </div>      
 
-    <div class="w3-col l4 m6 s12 w3-container w3-margin-bottom">
-      <img src="/images/20250928_163121.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <h3>Мурзик</h3>
-        <p>
-            Пол: мальчик<br/>
-            Возраст: 3 года<br/>
-            Стерилизация: да<br/>
-            Вакцинация: да
-        </p>        
-        
-        <div style="display:flex; gap:12px; margin-bottom: 15px;">
-            <a href="cat-page.html" class="w3-button w3-light-grey" style="flex: 1;">
-                Детали
-            </a>
-            <button onclick="copyCatLink('cat-page.html')" class="w3-button w3-light-grey" style="flex: 1;">
-                Поделиться
-            </button>                
-        </div>                 
+      <div class="w3-col">
+        <a href="all-cats-page.html" class="w3-button w3-white">
+          Смотреть всех питомцев
+        </a>
       </div>
-    </div>
 
-    <div class="w3-col l4 m6 s12 w3-container w3-margin-bottom">
-      <img src="/images/20250928_163121.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <h3>Мурзик</h3>
-        <p>
-            Пол: мальчик<br/>
-            Возраст: 3 года<br/>
-            Стерилизация: да<br/>
-            Вакцинация: да
-        </p>        
-        
-        <div style="display:flex; gap:12px; margin-bottom: 15px;">
-            <a href="cat-page.html" class="w3-button w3-light-grey" style="flex: 1;">
-                Детали
-            </a>
-            <button onclick="copyCatLink('cat-page.html')" class="w3-button w3-light-grey" style="flex: 1;">
-                Поделиться
-            </button>                
-        </div>                 
-      </div>
-    </div>
 
-    <div class="w3-col l4 m6 s12 w3-container w3-margin-bottom">
-      <img src="/images/20250928_163121.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <h3>Мурзик</h3>
-        <p>
-            Пол: мальчик<br/>
-            Возраст: 3 года<br/>
-            Стерилизация: да<br/>
-            Вакцинация: да
-        </p>        
-        
-        <div style="display:flex; gap:12px; margin-bottom: 15px;">
-            <a href="cat-page.html" class="w3-button w3-light-grey" style="flex: 1;">
-                Детали
-            </a>
-            <button onclick="copyCatLink('cat-page.html')" class="w3-button w3-light-grey" style="flex: 1;">
-                Поделиться
-            </button>                
-        </div>                 
-      </div>
     </div>
-
-        
   </div>
 
+  
+
+  
+
     <!-- Pagination -->  
-    <div class="w3-center">
+    <!-- <div class="w3-center">
         <div class="w3-bar">
             <a href="#" class="w3-bar-item w3-button">&laquo;</a>
             <a href="#" class="w3-button">1</a>
@@ -307,7 +323,7 @@ body, html {
             <a href="#" class="w3-button">4</a>
             <a href="#" class="w3-button">&raquo;</a>
         </div>
-    </div>
+    </div> -->
 
   <!-- <div class="w3-row-padding">
     <div class="w3-col m6">
@@ -325,7 +341,9 @@ body, html {
 <!-- Team Container -->
 <div class="w3-container w3-padding-64 w3-center" id="team">
 <h2>КТО МЫ</h2>
-<p>Тут можно написать что то про тех кто учавствует в этом проекте и занимается животными. Можно подумать кого то добавить:</p>
+<p class="w3-large">Это заготовка раздела.</p>
+<p class="w3-large">Тут можно написать что то про тех кто учавствует в этом проекте и занимается животными. Можно подумать кого добавить.</p>
+
 
 
 
@@ -340,13 +358,17 @@ body, html {
         </div>
 
         <div class="w3-col l6 m12 s12">
-            <h3>Помощь с заботой и любовью</h3>
-            <p>
+            <h3>Заготовка, подумать название если нужно</h3>
+            <p class="w3-large">
+                Тут описать как это всё выглядит, или как начиналось. В общем что то про приют, чтоб было понимание что это такое. Можно дать фото или несколько фото или фоновую фотографию.
+            </p>
+
+            <p class="w3-large">
                 Кошки и коты временно живут дома, получают заботу,
                 лечение и внимание, пока не найдут свою семью.
             </p>
 
-            <p>
+            <p class="w3-large">
                 Наша цель — помочь каждому животному найти
                 тёплый и любящий дом.
             </p>
@@ -387,7 +409,7 @@ body, html {
 <!-- Promo Section "Statistics" -->
 <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
   <div class="w3-col l6 m6">
-    <span class="w3-xxlarge">14+</span>
+    <span class="w3-xxlarge">41+</span>
     <br>Сейчас питомцев в нашем мини-приюте
   </div>
   <div class="w3-col l6 m6">
@@ -396,40 +418,47 @@ body, html {
   </div>  
 </div>
 
-<!-- Work Section -->
-<div class="w3-container" style="padding:128px 16px" id="work">
+<!-- Gallery Section -->
+<div class="w3-container" style="padding:128px 16px" id="gallery">
   <h3 class="w3-center">НАШИ БУДНИ</h3>
-  <p class="w3-center w3-large">Тут нужно написать пару предложений о том как обычно происходит рутина этой работы, ухода за животными и фото.</p>
+  <p class="w3-center w3-large">Загляните в нашу фотогалерею, чтобы увидеть больше фотографий наших питомцев, их повседневную жизнь, истории спасения и счастливые моменты в ожидании нового дома.</p>
 
   <div class="w3-row" style="margin-top:64px">
-    <div class="w3-col l3 m6" style="padding: 8px;">
-      <img src="/images/20250928_163121.jpg" style="width:100%; border-radius: 12px;" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+    <div class="w3-col l3 m4 s6" style="padding: 8px;">
+      <img src="/images/20250928_163121.jpg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
     </div>
-    <div class="w3-col l3 m6" style="padding: 8px;">
-      <img src="/images/20250928_163121.jpg" style="width:100%; border-radius: 12px;" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+    <div class="w3-col l3 m4 s6" style="padding: 8px;">
+      <img src="/images/20250928_163121.jpg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
     </div>
-    <div class="w3-col l3 m6" style="padding: 8px;">
-      <img src="/images/20250928_163121.jpg" style="width:100%; border-radius: 12px;" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+    <div class="w3-col l3 m4 s6" style="padding: 8px;">
+      <img src="/images/20250928_163121.jpg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
     </div>
-    <div class="w3-col l3 m6" style="padding: 8px;">
-      <img src="/images/20250928_163121.jpg" style="width:100%; border-radius: 12px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    <div class="w3-col l3 m4 s6" style="padding: 8px;">
+      <img src="/images/20250928_163121.jpg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
     </div>  
-    <div class="w3-col l3 m6" style="padding: 8px;">
-      <img src="/images/20250928_163121.jpg" style="width:100%; border-radius: 12px;" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+    <div class="w3-col l3 m4 s6" style="padding: 8px;">
+      <img src="/images/20250928_163121.jpg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
     </div>
-    <div class="w3-col l3 m6" style="padding: 8px;">
-      <img src="/images/20250928_163121.jpg" style="width:100%; border-radius: 12px;" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    <div class="w3-col l3 m4 s6" style="padding: 8px;">
+      <img src="/images/20250928_163121.jpg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
     </div>
-    <div class="w3-col l3 m6" style="padding: 8px;">
-      <img src="/images/20250928_163121.jpg" style="width:100%; border-radius: 12px;" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    <div class="w3-col l3 m4 s6" style="padding: 8px;">
+      <img src="/images/20250928_163121.jpg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
     </div>
-    <div class="w3-col l3 m6" style="padding: 8px;">
-      <img src="/images/20250928_163121.jpg" style="width:100%; border-radius: 12px;" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    <div class="w3-col l3 m4 s6" style="padding: 8px;">
+      <img src="/images/20250928_163121.jpg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
+    <div class="w3-col" style="padding: 8px;">
+      <a href="gallery.html" class="w3-button w3-light-grey">
+        Смотреть все фотографии
+      </a>
     </div>
   </div>
 
+  
+
   <!-- Pagination -->  
-    <div class="w3-center">
+    <!-- <div class="w3-center">
         <div class="w3-bar">
             <a href="#" class="w3-bar-item w3-button">&laquo;</a>
             <a href="#" class="w3-button">1</a>
@@ -438,15 +467,22 @@ body, html {
             <a href="#" class="w3-button">4</a>
             <a href="#" class="w3-button">&raquo;</a>
         </div>
-    </div>
+    </div> -->
 </div>
 
 <!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+<!-- <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img01" class="w3-image">
     <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div> -->
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" style="padding-top: 0;" onclick="this.style.display='none'">  
+  <div style="display: flex; align-items: center; justify-content: center; min-height: 100vh; box-sizing: border-box;">
+    <img id="img01" class="w3-image w3-animate-zoom" style="max-height: 90vh; max-width: 90vw; width: auto; height: auto;">    
   </div>
 </div>
 
@@ -456,189 +492,178 @@ body, html {
     <p class="w3-center w3-large">Тут я рассказываю о наших новостях, новых питомцах, тех которые сейчас живут в моём домашнем мини приюте, и о тех кто уже нашё свой дом и семью.</p>
   
     <div style="margin-top:48px">
+      <!-- Grid -->
+      <div class="w3-row">            
 
-        <!-- Grid -->
-        <div class="w3-row">            
-            <!-- Blog Entries-->
-            <div class="w3-col l9 m12 s12">
-                <div class="w3-row">
-                    <!-- Blog entry -->
-                    <div class="w3-col l6 m12 s12">                        
-                        <div class="w3-card-4 w3-margin w3-white">
-                            <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%">
-                        
-                            <div class="w3-container">
-                                <h3><b>Мурзик нашёл хозяина</b></h3>
-                                <h5>Нашёл свой дом, <span class="w3-opacity">April 6, 2026</span></h5>
-                            </div>
-
-                            <div class="w3-container">
-                                <p class="w3-large">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-                                tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-                                <div class="w3-row">
-                                    <div class="w3-col m8 s12">
-                                    <p>
-                                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
-                                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
-                                    </p>
-                                    </div>
-                                    <div class="w3-col m4 w3-hide-small">
-                                    <p><span class="w3-padding-large w3-right"><b>Комментарии  </b><span>0</span></span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Blog entry -->
-                    <div class="w3-col l6 m12 s12">                        
-                        <div class="w3-card-4 w3-margin w3-white">
-                            <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%">
-                        
-                            <div class="w3-container">
-                                <h3><b>Мурзик нашёл хозяина</b></h3>
-                                <h5>Нашёл свой дом, <span class="w3-opacity">April 6, 2026</span></h5>
-                            </div>
-
-                            <div class="w3-container">
-                                <p class="w3-large">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-                                tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-                                <div class="w3-row">
-                                    <div class="w3-col m8 s12">
-                                    <p>
-                                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
-                                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
-                                    </p>
-                                    </div>
-                                    <div class="w3-col m4 w3-hide-small">
-                                    <p><span class="w3-padding-large w3-right"><b>Комментарии  </b><span>0</span></span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                                                        
-                    
+        <!-- Blog Entries-->
+        <div class="w3-col l9 m12 s12">
+          <div class="w3-row">
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>
+                  <!-- <h5>Нашёл свой дом, <span class="w3-opacity">April 6, 2026</span></h5> -->
                 </div>
-
-                <!-- Blog entry -->
-                <!-- <div class="w3-card-4 w3-margin w3-white">
-                    <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%">
-                
-                    <div class="w3-container">
-                        <h3><b>Мурзик нашёл хозяина</b></h3>
-                        <h5>Нашёл свой дом, <span class="w3-opacity">April 6, 2026</span></h5>
-                    </div>
-
-                    <div class="w3-container">
-                        <p class="w3-large">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-                        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-                        <div class="w3-row">
-                            <div class="w3-col m8 s12">
-                            <p>
-                                <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
-                                <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
-                            </p>
-                            </div>
-                            <div class="w3-col m4 w3-hide-small">
-                            <p><span class="w3-padding-large w3-right"><b>Комментарии  </b><span>0</span></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>                 -->
-                <!-- Blog entry -->
-                <!-- <div class="w3-card-4 w3-margin w3-white">
-                    <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%">
-                
-                    <div class="w3-container">
-                        <h3><b>Мурзик нашёл хозяина</b></h3>
-                        <h5>Нашёл свой дом, <span class="w3-opacity">April 6, 2026</span></h5>
-                    </div>
-
-                    <div class="w3-container">
-                        <p class="w3-large">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-                        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-                        <div class="w3-row">
-                            <div class="w3-col m8 s12">
-                            <p>
-                                <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
-                                <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
-                            </p>
-                            </div>
-                            <div class="w3-col m4 w3-hide-small">
-                            <p><span class="w3-padding-large w3-right"><b>Комментарии  </b><span>0</span></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-            <div class="w3-col l3 m12 s12">
-                <div class="w3-card w3-margin">
-                    <div class="w3-container w3-padding">
-                        <h3>Список заметок</h3>
-                    </div>
-                    <ul class="w3-ul w3-hoverable w3-white">
-                        <li class="w3-padding-16">
-                            <img src="/images/20250928_162221.jpg" alt="Image" class="w3-left w3-margin-right" style="width: 90px;">
-                            <span>Мурчик нашёл хозяина</span><br/>
-                            <span>Mauris neque quam</span>
-                        </li>
-                        <li class="w3-padding-16">
-                            <img src="/images/20250928_162221.jpg" alt="Image" class="w3-left w3-margin-right" style="width: 90px;">
-                            <span>Мурчик нашёл хозяина</span><br/>
-                            <span>Mauris neque quam</span>
-                        </li>
-                        <li class="w3-padding-16">
-                            <img src="/images/20250928_162221.jpg" alt="Image" class="w3-left w3-margin-right" style="width: 90px;">
-                            <span>Мурчик нашёл хозяина</span><br/>
-                            <span>Mauris neque quam</span>
-                        </li>
-                        <li class="w3-padding-16">
-                            <img src="/images/20250928_162221.jpg" alt="Image" class="w3-left w3-margin-right" style="width: 90px;">
-                            <span>Мурчик нашёл хозяина</span><br/>
-                            <span>Mauris neque quam</span>
-                        </li>
-                        <li class="w3-padding-16">
-                            <img src="/images/20250928_162221.jpg" alt="Image" class="w3-left w3-margin-right" style="width: 90px;">
-                            <span>Мурчик нашёл хозяина</span><br/>
-                            <span>Mauris neque quam</span>
-                        </li>
-                    </ul>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
                 </div>
-            </div>
-
-
-            <div class="w3-col l8 m12 s12">
-                <!-- Blog entry -->
-                <div class="w3-card-4 w3-margin w3-white">
-                    <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%">
+              </div>
+            </div>            
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
                 
-                    <div class="w3-container">
-                        <h3><b>Мурзик нашёл хозяина</b></h3>
-                        <h5>Нашёл свой дом, <span class="w3-opacity">April 6, 2026</span></h5>
-                    </div>
-
-                    <div class="w3-container">
-                        <p class="w3-large">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-                        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-                        <div class="w3-row">
-                            <div class="w3-col m8 s12">
-                            <p>
-                                <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
-                                <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
-                            </p>
-                            </div>
-                            <div class="w3-col m4 w3-hide-small">
-                            <p><span class="w3-padding-large w3-right"><b>Комментарии  </b><span>0</span></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>                
-            </div>                        
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>
+                  <!-- <h5>Нашёл свой дом, <span class="w3-opacity">April 6, 2026</span></h5> -->
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>            
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>
+                  <!-- <h5>Нашёл свой дом, <span class="w3-opacity">April 6, 2026</span></h5> -->
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>            
+            
+          </div>
         </div>
+        <div class="w3-col l3 m12 s12">
+          <div class="w3-card w3-margin">
+            <div class="w3-container w3-padding">
+              <h3>Список заметок</h3>
+            </div>
+              <ul class="w3-ul w3-hoverable w3-white">
+                <li class="w3-padding-16">
+                  <a href="blog-page.html" style="text-decoration: none; display: block;">
+                    <img src="/images/20250928_162221.jpg" alt="Image" class="w3-left w3-margin-right" style="width: 90px;">
+                    <span style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><b>Мурчик нашёл хозяина</b></span>
+                    <span style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Начало текста заметки, которое автоматически обрежется на маленьком экране</span>
+                  </a>                  
+                </li>                        
+                <li class="w3-padding-16">
+                  <a href="blog-page.html" style="text-decoration: none; display: block;">
+                    <img src="/images/20250928_162221.jpg" alt="Image" class="w3-left w3-margin-right" style="width: 90px;">
+                    <span style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><b>Мурчик нашёл хозяина</b></span>
+                    <span style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Начало текста заметки, которое автоматически обрежется на маленьком экране</span>
+                  </a>                  
+                </li>                        
+                <li class="w3-padding-16">
+                  <a href="blog-page.html" style="text-decoration: none; display: block;">
+                    <img src="/images/20250928_162221.jpg" alt="Image" class="w3-left w3-margin-right" style="width: 90px;">
+                    <span style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><b>Мурчик нашёл хозяина</b></span>
+                    <span style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Начало текста заметки, которое автоматически обрежется на маленьком экране</span>
+                  </a>                  
+                </li>                        
+                <li class="w3-padding-16">
+                  <a href="blog-page.html" style="text-decoration: none; display: block;">
+                    <img src="/images/20250928_162221.jpg" alt="Image" class="w3-left w3-margin-right" style="width: 90px;">
+                    <span style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><b>Мурчик нашёл хозяина</b></span>
+                    <span style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Начало текста заметки, которое автоматически обрежется на маленьком экране</span>
+                  </a>                  
+                </li>                        
+                <li class="w3-padding-16">
+                  <a href="blog-page.html" style="text-decoration: none; display: block;">
+                    <img src="/images/20250928_162221.jpg" alt="Image" class="w3-left w3-margin-right" style="width: 90px;">
+                    <span style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><b>Мурчик нашёл хозяина</b></span>
+                    <span style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Начало текста заметки, которое автоматически обрежется на маленьком экране</span>
+                  </a>                  
+                </li>                        
+                <li class="w3-padding-16">
+                  <a href="blog-page.html" style="text-decoration: none; display: block;">
+                    <img src="/images/20250928_162221.jpg" alt="Image" class="w3-left w3-margin-right" style="width: 90px;">
+                    <span style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><b>Мурчик нашёл хозяина</b></span>
+                    <span style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Начало текста заметки, которое автоматически обрежется на маленьком экране</span>
+                  </a>                  
+                </li>                        
+              </ul>
+          </div>          
+        </div>      
+      </div>
+      <div class="w3-col" style="padding: 16px;">
+        <a href="all-blogs-page.html" class="w3-button w3-white">
+          Смотреть все заметки
+        </a>
+      </div>      
     </div>
 
     <!-- Pagination -->  
-    <div class="w3-center">
+    <!-- <div class="w3-center">
         <div class="w3-bar">
             <a href="#" class="w3-bar-item w3-button">&laquo;</a>
             <a href="#" class="w3-button">1</a>
@@ -647,39 +672,7 @@ body, html {
             <a href="#" class="w3-button">4</a>
             <a href="#" class="w3-button">&raquo;</a>
         </div>
-    </div>
-</div>
-
-<!-- Fixed background photo for left part-->
-<div class="split-contact-section" id="contact">
-
-    <!-- Левая статичная половина -->
-    <div class="split-left-bg"></div>
-
-    <!-- Правая часть с контактами -->
-    <div class="split-right-content">
-        <h3 class="w3-center">КОНТАКТЫ</h3>
-
-        <p class="w3-center w3-large">Свяжитесь с нами:</p>
-
-        <div style="margin-top:48px">
-            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Одесса, Украина</p>
-            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> +380 733 025 150</p>
-            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> mail@mail.com</p>
-        </div>
-
-        <p class="w3-center w3-large" style="margin-top:32px;">
-            Мы в социальных сетях:
-        </p>
-
-        <div style="margin-top:24px; display:flex; justify-content:center; gap:20px;">
-            <a href="#"><i class="fa fa-telegram w3-xxlarge w3-hover-opacity"></i></a>
-            <a href="#"><i class="fa fa-facebook-official w3-xxlarge w3-hover-opacity"></i></a>
-            <a href="#"><i class="fa fa-whatsapp w3-xxlarge w3-hover-opacity"></i></a>
-            <a href="#"><i class="fa fa-instagram w3-xxlarge w3-hover-opacity"></i></a>
-        </div>
-    </div>
-
+    </div> -->
 </div>
 
 <!-- How to take cat Section-->
@@ -696,11 +689,51 @@ body, html {
     </div>    
 </div>
 
+<!-- Fixed background photo for left part-->
+<div class="split-contact-section" id="contact">
+
+    <!-- Левая статичная половина -->
+    <div class="split-left-bg"></div>
+
+    <!-- Правая часть с контактами -->
+    <div class="split-right-content">
+        <h3 class="w3-center">КОНТАКТЫ</h3>
+
+        <!-- <p class="w3-center w3-large">Свяжитесь с нами:</p> -->
+
+        <!-- <div style="margin-top:48px">
+            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Одесса, Украина</p>
+            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> +380 733 025 150</p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> mail@mail.com</p>
+        </div> -->
+
+        <div class="w3-center w3-large">
+            <p>Одесса, Украина</p>
+            <p>+380 733 025 150</p>
+            <p>mail@mail.com</p>
+        </div>
+
+        <p class="w3-center w3-large" style="margin-top:32px;">
+            Мы в социальных сетях:
+        </p>
+
+        <div style="margin-top:24px; display:flex; justify-content:center; gap:20px;">
+            <a href="#"><i class="fa fa-telegram w3-xxlarge w3-hover-opacity"></i></a>
+            <a href="#"><i class="fa fa-facebook-official w3-xxlarge w3-hover-opacity"></i></a>
+            <a href="#"><i class="fa fa-whatsapp w3-xxlarge w3-hover-opacity"></i></a>
+            <a href="#"><i class="fa fa-instagram w3-xxlarge w3-hover-opacity"></i></a>
+        </div>
+    </div>
+
+</div>
+
+
+
 
 
 
 <!-- fixed background photo -->
-<div class="cat-bg-section">
+<!-- <div class="cat-bg-section">
   <div class="w3-content" style="padding:128px 16px;">
     <div class="w3-white" style="max-width:520px; margin-left:auto; padding:32px; border-radius:12px;">
       <h3 class="w3-center">КОНТАКТЫ</h3>
@@ -710,44 +743,14 @@ body, html {
       <p>mail@mail.com</p>
     </div>
   </div>
-</div>
-
-<!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-  
-  <div class="w3-row" style="min-height: 500px; display: 48px; align-items: ;">
-    <div class="w3-col l6 m12 contact-bg">
-    </div>
-    
-    <div class="w3-col l6 m12">
-            <h3 class="w3-center">КОНТАКТЫ</h3>
-
-    <p class="w3-center w3-large">Свяжитесь с нами:</p>
-    <div style="margin-top:48px">
-        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Одесса, Украина</p>
-        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +380 733 025 150</p>
-        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-        <br>    
-    </div>
-    
-    <p class="w3-center w3-large">Мы в социальных сетях:</p>
-  
-    <div style="margin-top:24px; display:flex; justify-content:center; gap:20px;">
-        <a href="#"><i class="fa fa-telegram w3-xxlarge w3-hover-opacity"></i></a>
-        <a href="#"><i class="fa fa-facebook-official w3-xxlarge w3-hover-opacity"></i></a>
-        <a href="#"><i class="fa fa-whatsapp w3-xxlarge w3-hover-opacity"></i></a>
-        <a href="#"><i class="fa fa-instagram w3-xxlarge w3-hover-opacity"></i></a>
-    </div>
-    </div>
-  </div>
-
+</div> -->
 
 
   
 
-  <img src="/images/20250928_163121.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+  <!-- <img src="/images/20250928_163121.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px"> -->
 
-  <div style="margin-top: 48px;">
+  <!-- <div style="margin-top: 48px;">
     <iframe
         src="https://maps.app.goo.gl/JrR9jdPYqpaxcimE8"
         width="100%"
@@ -757,9 +760,9 @@ body, html {
         allowfullscreen>        
     </iframe>
 
-  </div>
+  </div> -->
 
-  <div style="margin-top: 48px;">
+  <!-- <div style="margin-top: 48px;">
     <iframe 
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4464.493826603234!2d30.73522527362228!3d46.47826086216739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sit!4v1775575553392!5m2!1sen!2sit" 
         width="100%" 
@@ -769,9 +772,9 @@ body, html {
         loading="lazy" 
         referrerpolicy="no-referrer-when-downgrade">
     </iframe>
-  </div>
+  </div> -->
 
-  <div style="margin-top: 48px;">
+  <div>
     <iframe 
         src="https://www.google.com/maps?q=46.479982259899124,30.731698596928705&z=15&output=embed" 
         width="100%"
@@ -783,7 +786,7 @@ body, html {
     </iframe>
   </div>
 
-  <div style="margin-top: 48px;">
+  <!-- <div style="margin-top: 48px;">
     <iframe 
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5021.395476323612!2d30.73107058966036!3d46.4795874285213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sit!4v1775578072103!5m2!1sen!2sit" 
         width="100%" 
@@ -793,11 +796,11 @@ body, html {
         loading="lazy" 
         referrerpolicy="no-referrer-when-downgrade">
     </iframe>
-  </div>
+  </div> -->
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
+<footer class="w3-center w3-green w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>

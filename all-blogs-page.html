@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/images/20250928_163121.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+/* Fixed background photo */
+.cat-bg-section {
+  background-image: url('/images/20250928_163121.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 600px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html#home" class="w3-bar-item w3-button w3-wide">ВОЗЬМИ ДРУГА</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html#about" class="w3-bar-item w3-button">ПРО САЙТ</a>
+      <a href="index.html#all-cats" class="w3-bar-item w3-button">НАШИ ПИТОМЦЫ</a>
+      <a href="index.html#team" class="w3-bar-item w3-button">КТО МЫ</a>
+      <a href="index.html#gallery" class="w3-bar-item w3-button">НАШИ БУДНИ</a>
+      <a href="index.html#blog" class="w3-bar-item w3-button">ЗАМЕТКИ</a>
+      <a href="index.html#how-take" class="w3-bar-item w3-button">СОВЕТЫ</a>
+      <a href="index.html#contact" class="w3-bar-item w3-button">КОНТАКТЫ</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-green w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ПРО САЙТ</a>
+  <a href="index.html#all-cats" onclick="w3_close()" class="w3-bar-item w3-button">НАШИ ПИТОМЦЫ</a>
+  <a href="index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">КТО МЫ</a>
+  <a href="index.html#gallery" onclick="w3_close()" class="w3-bar-item w3-button">НАШИ БУДНИ</a>
+  <a href="index.html#blog" onclick="w3_close()" class="w3-bar-item w3-button">ЗАМЕТКИ</a>
+  <a href="index.html#how-take" onclick="w3_close()" class="w3-bar-item w3-button">СОВЕТЫ</a>
+  <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">КОНТАКТЫ</a>  
+</nav>
+
+
+<div class="w3-container" style="padding: 64px 16px;" id="all-cats-page">  
+    <h1 class="w3-center">НАШИ ЗАМЕТКИ</h1>
+  
+    <div style="max-width: 1500px; margin: 0 auto;">
+        <hr/>
+        <div style="max-width: 1300px; margin: 0 auto;">
+            <p class="w3-center w3-large">
+                Здесь мы делимся историями наших питомцев, новостями, важными событиями и моментами из повседневной жизни.
+            </p>
+            <p class="w3-center w3-large">
+                Эти заметки помогают лучше узнать наших котиков и увидеть их путь к новому дому.
+            </p>
+        </div>    
+        <hr>
+
+        <div class="w3-row">
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>                  
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>                  
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>                  
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>                  
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>                  
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>                  
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>                  
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>                  
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>                  
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>                  
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>                  
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>                  
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>                  
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>                  
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>                  
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>                  
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>                  
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>                  
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>                  
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>                  
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- Blog entry -->
+            <div class="w3-col l4 m6 s12">                        
+              <div class="w3-card-4 w3-margin w3-white">                
+                <a href="blog-page.html">
+                  <img src="/images/20250928_163121.jpg" alt="Nature" style="width:100%" class="w3-hover-opacity">                        
+                </a>
+                <div class="w3-container">
+                  <h3><b>Мурчик нашёл хозяина</b></h3>                  
+                </div>
+                <div class="w3-container">
+                  <p 
+                    class="w3-large" 
+                    style="display: -webkit-box; line-clamp: 5; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">
+                    Собой в по дальнейших анализа новая выполнять нашей эксперимент и собой в условий. Задач. Представляет рамки же порядка, организации, и роль выполнять структура играет формировании собой постоянный условий повседневная кадров реализация активности роль задания позиций, порядка, существенных новая нашей реализация нашей плановых условий. Разработке сфера позволяет важную и от по развития. А в играет намеченны.
+                  </p>
+                  <div style="display: flex; justify-content: space-between; gap:6px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="blog-page.html" class="w3-button w3-padding-large w3-white w3-border">
+                      <b>Читать далее</b>
+                    </a>                    
+                    <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                  </div>
+                  <!-- <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p style="display: flex; gap:6px; flex-wrap: wrap;">
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Читать далее</b></button>
+                        <button class="w3-button w3-padding-large w3-white w3-border"><b>Поделиться</b></button>
+                      </p>
+                    </div>                    
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            
+            
+        </div>           
+        
+        <div class="w3-panel w3-pale-yellow w3-padding" style="margin-top: 32px;">
+            <h3>Хотите узнать больше о наших котиках?</h3>
+            <p>
+                Здесь мы делимся заметками о жизни наших питомцев, рассказываем их истории, показываем важные моменты и маленькие радости каждого дня.
+            </p>
+            <p>
+                Эти заметки помогают лучше узнать характер животных, понять их путь и увидеть, как сильно каждому из них нужны забота, внимание и свой человек.
+            </p>
+            <p>
+                Читайте, делитесь страницей с друзьями и, возможно, именно одна из этих историй поможет котику найти дом.
+            </p>
+        </div>
+
+    <div class="w3-padding" style="display: flex; flex-wrap: wrap; gap: 10px;">
+      <a href="index.html#contact" class="w3-button w3-light-grey">
+        Связаться
+      </a>
+      <button onclick="copyPetLink()" class="w3-button w3-light-grey">
+        Поделиться страницей
+      </button>
+      <a href="index.html#blog" class="w3-button w3-light-grey">
+        Обратно
+      </a>
+    </div>
+
+        
+    </div>        
+
+    
+
+    
+
+    
+    
+
+    
+
+  
+
+</div>
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" style="padding-top: 0;" onclick="this.style.display='none'">  
+  <div style="display: flex; align-items: center; justify-content: center; min-height: 100vh; box-sizing: border-box;">
+    <img id="img01" class="w3-image w3-animate-zoom" style="max-height: 90vh; max-width: 90vw; width: auto; height: auto;">    
+  </div>
+</div>
+
+
+<!-- Header with full-height image -->
+<div class="cat-bg-section">
+  <div class="w3-section" style="padding: 16px 16px;">
+    <div class="w3-text-white">
+      <p class="w3-jumbo w3-hide-small w3-hide-medium">Помогаем бездомным кошкам и котам найти свой дом и семью</p>
+      <p class="w3-xxlarge w3-hide-large">Помогаем бездомным кошкам и котам найти свой дом и семью</p>      
+      <p class="w3-xlarge">Каждое животное заслуживает любовь, заботу</p>
+      <p class="w3-xlarge">Спасение одного кота не изменит мир. Но мир несомненно изменится для этого одного кота...</p>
+    </div>
+  </div>  
+</div>
+
+
+<!-- Contact Section -->
+<div class="w3-container" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">КОНТАКТЫ</h3>
+
+  <!-- <p class="w3-center w3-large">Свяжитесь с нами:</p> -->
+  <div class="w3-center" style="margin-top:48px">
+    <!-- <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Одесса, Украина</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +380 733 025 150</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p> -->
+    
+    <p class="w3-large">Odessa, Ukraine</p>
+    <p class="w3-large">Phone: +380 733 025 150</p>
+    <p class="w3-large">Email: mail@mail.com</p>
+    <br>    
+  </div>
+
+  <!-- <div class="w3-content">
+    <div class="w3-row-padding">
+      <div class="w3-half w3-container w3-right-align">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i></p>
+        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i></p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i></p>
+      </div>
+      <div class="w3-half w3-container">
+        <p class="w3-large">Odessa, Ukraine</p>
+        <p class="w3-large">Phone: +380 733 025 150</p>
+        <p class="w3-large">Email: mail@mail.com</p>
+      </div>
+    </div>
+  </div>   -->
+
+  <p class="w3-center w3-large">Мы в социальных сетях:</p>
+  
+  <div style="margin-top:24px; display:flex; justify-content:center; gap:20px;">
+    <a href="#"><i class="fa fa-telegram w3-xxlarge w3-hover-opacity"></i></a>
+    <a href="#"><i class="fa fa-facebook-official w3-xxlarge w3-hover-opacity"></i></a>
+    <a href="#"><i class="fa fa-whatsapp w3-xxlarge w3-hover-opacity"></i></a>
+    <a href="#"><i class="fa fa-instagram w3-xxlarge w3-hover-opacity"></i></a>
+  </div>
+  
+</div>
+  
+  
+  
+
+
+  
+
+  <!-- <img src="/images/20250928_163121.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px"> -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-green w3-padding-64">
+  <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button 
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+// Carousel
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+
+  if (n > x.length) slideIndex = 1;
+  if (n < 1) slideIndex = x.length;
+
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+
+  x[slideIndex - 1].style.display = "block";
+}
+</script>
+
+</body>
+</html>
